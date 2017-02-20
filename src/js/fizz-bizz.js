@@ -5,15 +5,13 @@ const isBuzz = (num) => {
     return num % 5 === 0;
 };
 export const fizzBuzz = (num) => {
-    if (isFizz(num) && isBuzz(num)) {
-        return 'FIZZBUZZ';
-    }
+    let result = '';
     if (isFizz(num)) {
-        return 'FIZZ';
+        result += 'FIZZ';
     }
     if (isBuzz(num)) {
-        return 'BUZZ';
+        result += 'BUZZ';
     }
-    return num.toString();
+    return result || num.toString();
 };
 
