@@ -18,6 +18,12 @@ describe('Test Fizz Buzz', () => {
         expect(fizzBuzz(25)).to.equal('BUZZ');
     });
 
+    it('should return FIZZBUZZ given number can be divided by both 3 and 5', () => {
+        expect(fizzBuzz(15)).to.equal('FIZZBUZZ');
+        expect(fizzBuzz(45)).to.equal('FIZZBUZZ');
+        expect(fizzBuzz(75)).to.equal('FIZZBUZZ');
+    });
+
 });
 
 
