@@ -2,6 +2,9 @@ export const fizzBuzz = (num) => {
     if(num % 3 === 0) {
         return 'FIZZ';
     }
+    if(num % 5 === 0) {
+        return 'BUZZ';
+    }
     return num.toString();
 };
 
